@@ -11,6 +11,9 @@
      </style>
 	</head>
 <body style="background-image: url('live2d/img/img102.jpg');background-repeat:no-repeat;background-size:100% 100%;background-attachment: fixed;">
+	
+		<script type="text/javascript" src="./live2d/js/jquery-2.2.0.min.js"></script>
+
 <div class="style1">
 <div id="landlord">
     <div class="message" style="opacity:0"></div>
@@ -20,7 +23,27 @@
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1820796501&auto=1&height=66"></iframe>
 	</div>
-	<script type="text/javascript" src="./live2d/js/jquery-2.2.0.min.js"></script>
+	
+	
+	
+	<div class="membder-background addMemo-body">
+	<div class="addMemo" id="iframe">
+		<label>日期</label><input type="text" value="2015-10-10"  id="J-xl"/>
+		<div class="clear-both"></div>
+		<iframe src="iframe.html" width="20%" height="20%" id="iframepage" name="iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>    
+	</div>		
+</div>
+	<script type="text/javascript">
+$(document).ready(function(){
+	var iframe=$("#iframepage").hide();
+	$("#J-xl").click(function(){
+		iframe.fadeIn();
+	});
+});
+</script>
+	
+	
+
 <script type="text/javascript">
     var message_Path = './live2d/'
     var home_Path = 'https://entropyriser.github.io/live2dweb/'
